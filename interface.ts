@@ -16,14 +16,19 @@ export interface Data {
     PreviousDate: string
     PreviousURL: string
     Timestamp: string
-    Valute: ValuteData
+    Valute: Map
 
 
 }
 
-export interface Map {
-    Valutes: Record<string, ValuteData>
+export interface Map{
+    Valutes: Record<string, ValuteData> | React.ReactNode
 
+}
+
+
+export interface ChildrenProps{
+    children: React.ReactNode
 }
 
 

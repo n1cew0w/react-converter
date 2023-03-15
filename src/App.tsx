@@ -5,10 +5,10 @@ import exp from "constants";
 import Currencies from "./components/Currencies";
 
 
-function App() {
+function App(props: any) {
     return (
         <div className="App">
-            <Currencies/>
+            <Currencies />
         </div>
     );
 }
